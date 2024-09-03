@@ -1,0 +1,105 @@
+body{
+    font-family: arial;
+    background-color: rgb(255, 255, 255);
+}
+.logo {
+    width: 100px;
+    border-radius: 30%;
+    margin-right: 20px;
+}
+
+.a {
+    margin: 5px; /* Espacio entre botones */
+    padding: 10px 20px;
+    border-radius: 20%;
+    color: #ffffff;
+    background-color: #1E3A8A;
+}
+
+header {
+    display: flex;
+    align-items: center; 
+}
+
+.button-container {
+    display: flex;
+    flex: 1; /* Permite que el contenedor de botones ocupe el espacio restante */
+    justify-content: space-around; /* Espacio igual entre columnas */
+}
+
+.column {
+    display: flex;
+    flex-direction: column; /* Organiza los botones verticalmente */
+    align-items: center; /* Centra los botones horizontalmente en cada columna */
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.c{
+    width: 50%;             
+    max-width: 640px;       
+    height: auto;   
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;  
+    border: 2px solid black;
+}
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;               /* Permite que los elementos se envuelvan en filas */
+    justify-content: space-between;/* Distribuye el espacio entre los elementos */
+    gap: 20px;                     /* Espacio entre los elementos */
+}
+
+/* Estilo para cada sección (elemento) */
+.item {
+    flex: 1 1 calc(50% - 20px);    /* Hace que cada item ocupe el 50% del ancho menos el espacio entre ellos */
+    box-sizing: border-box;        /* Asegura que el padding y border no afecten al ancho total */
+    text-align: center;            /* Centra el contenido dentro de cada sección */
+}
+
+/* Estilo para las imágenes y videos */
+.goku, .semi, .video, .editor {
+    width: 100%;                   /* Ajusta el ancho de las imágenes y videos al 100% del contenedor */
+    height: auto;                  /* Mantiene la proporción de las imágenes y videos */
+    border: 2px solid black;       /* Borde negro alrededor de las imágenes y videos */
+    border-radius: 5px;            /* Opcional: bordes redondeados */
+}
+
+/* Estilo para los botones */
+button {
+    width: 100%;                   /* Botones ocupan todo el ancho del contenedor */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #1E3A8A;     /* Color de fondo del botón */
+    color: #FFFFFF;                /* Color del texto del botón */
+    border: 2px solid black;       /* Borde negro alrededor del botón */
+    border-radius: 5px;            /* Opcional: bordes redondeados */
+    margin-bottom: 10px;           /* Espacio entre el botón y el video o imagen */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3B82F6;     /* Color de fondo al pasar el mouse por encima */
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.mensaje {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    border-radius: 30%;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+p {
+    font-size: 1rem;
+    text-decoration: none;
+}
